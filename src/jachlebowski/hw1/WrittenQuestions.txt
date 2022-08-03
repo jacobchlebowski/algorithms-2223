@@ -1,0 +1,114 @@
+<<Jacob Chlebowski>>
+HW1
+Written Questions
+
+//My understanding of Q1 is when we use the pop method,
+//the values aren't removed from the backing array, the top
+//index just goes down, and the object gets overriden on the next push
+
+//All operations and values are out of 100 (not all 100 elements are used)
+
+<Q1 1.1>:
+    Output: 2.0
+    Ops: [*, /]  
+    Vals: [5.0, 2.0, 4.0]    
+
+<Q1 1.2>:
+    Output: 13.0
+    Ops:[+, +]
+    Vals: [13.0, 8.0]
+
+
+<Q1 1.3>:
+    Output: 71.0
+    Ops:[-]
+    Vals:[71.0]
+
+
+<Q1 1.4>:
+    Output: 4.0
+    Ops:[*, +, +]
+    Vals:[1.0, 2.0, 3.0, 4.0]
+
+
+<Q1 1.5>:
+    Output: 4.571428571428571
+    Ops:[/, /, -]
+    Vals:[4.571428571428571, 5.25, 4.0, 1.0]
+
+
+<Q1 1.7>:
+    Output: 4.1231056256176615
+    Ops: [exp, log]
+    Vals: [1.4037646551042395, 0.489301084236452, 4.0]
+//Everytime the program encounters a ")" , it pops two values in vals stack,
+// pops an operator in ops stack, evaluates, and pushes the result!
+
+
+
+
+
+
+
+<Q4.1>
+
+
+
+		<Avg. Number of Probes per LOCATE REQUEST>		
+			
+N	     M	  H-Best   S-Best  H-First	F-Best	F-First
+
+3.0		3.4		2.0		3.3		2.9		3.6		1.5
+4.0		3.1		2.5		4.0		3.9		8.8		4.3
+5.0		2.8		2.5		4.8		4.8		27.1	9.1
+6.0		2.7		2.9		5.3		5.8		34.4	15.7
+7.0		2.6		2.9		5.7		6.7		39.8	24.1
+8.0		2.5		3.4		6.0		7.7		46.6	34.5
+9.0		2.5		3.5		6.4		8.6		53.1	46.8
+10.0	2.4		3.6		6.8		9.6		78.7	60.9
+11.0	2.4		3.7		7.1		10.5	121.4	77.0
+12.0	2.3		3.8		7.3		11.5	147.8	95.0
+13.0	2.3		3.8		7.5		12.4	178.6	114.8
+14.0	2.3		3.9		7.7		13.4	195.7	136.6
+15.0	2.3		3.9		7.9		14.3	212.4	160.1
+16.0	2.3		4.3		8.0		15.3	228.2	185.8
+17.0	2.2		4.4		8.2		16.2	244.8	213.2
+18.0	2.2		4.5		8.4		17.2	259.5	242.6
+
+
+
+
+			<Probes per Request Average>
+			
+				Probes/Request Average
+		M				2.2
+		H-Best			3.1
+		S-Best			5.8
+		H-First			8.9
+		F-Best			104.5
+		F-First			79.0
+
+
+
+
+
+
+Q<4.2>
+
+
+	Runtime Performances using Big-O Notation
+	
+		M				O(1) -stays consistent , could decrease slightly
+		H-Best			O(log(N)) -average increases by fixed amount as problem size doubles
+		S-Best			O(log(N))
+		H-First			O(log(N))
+		F-Best			O(Nlog(N)) -more than doubles as problem size doubles (graceful slope)
+		F-First			O(N^2) -quadruples as problem size doubles
+
+
+
+
+
+
+
+
