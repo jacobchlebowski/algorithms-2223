@@ -1,0 +1,57 @@
+<<Jacob Chlebowski>>
+HW3
+Written Questions
+
+Q1.1
+Algorithm		Stable Sort
+HeapSort:			false
+InsertionSort:		true
+MergeSort:			true
+QuickSort:			false
+SelectionSort:		false
+TimSort Primitive:	true
+TimSort Optimized:	true
+
+
+Q1.2
+N			TimSort	Merge	PrimTS	Quick	Heap
+1048576		1.031	0.906	0.969	1.047	1.688	
+2097152		2.266	2.297	1.906	3.016	4.484	
+4194304		4.969	4.766	6.063	7.656	11.984	
+8388608		9.922	12.656	11.313	13.563	18.922	
+16777216	16.750	16.922	17.672	23.172	46.516	
+
+Q1.3
+N			TimSort	Merge	PrimTS	Quick	Heap
+1048576		0.484	0.891	0.750	0.953	1.328	
+2097152		1.016	1.875	1.719	1.984	3.250	
+4194304		2.156	3.297	3.609	4.016	6.984	
+8388608		5.313	8.578	8.094	10.156	17.656	
+16777216	10.750	14.516	14.516	21.453	36.406	
+
+Q1.4
+N			TimSort	Merge	PrimTS	Quick	Heap
+1048576		0.016	0.344	0.359	0.578	0.031	
+2097152		0.031	0.703	0.609	1.531	0.047	
+4194304		0.047	1.500	1.563	3.313	0.172	
+8388608		0.063	2.906	2.938	7.219	0.281	
+16777216	0.094	4.984	5.969	16.281	0.578
+
+
+
+
+
+
+
+
+<Q1.3>
+The difference between 1.2 and 1.3 is that when there ARE MORE DUPLICATES
+the runtimes seem to be faster than if there weren't duplicates.
+
+<Q1.4>
+I am surprised by the results since it is much faster! Tim Sort especially. I did some
+research and found that Tim Sort doesn't care about the order of the
+array (reverse or not reverse), since what it does is keeps the same
+key and performs balanced merges. HeapSort has also faster since in the heap sort 
+algorithm, putting the values in reverse order in the constructed array,
+the max will be at the top to start.

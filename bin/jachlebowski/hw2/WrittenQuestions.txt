@@ -1,0 +1,39 @@
+<<Jacob Chlebowski>>
+HW2
+Written Questions
+
+
+
+
+<Q1.1> - in Num_shuffles.java
+<Q1.2> - in Num_shuffles.java
+<Q1.3> - in Num_shuffles.java
+
+
+
+<Q3.1 & Q3.2> - BASE CARE AND RECURSIVE CASE
+
+		  
+Base Case: S(1) = 2
+
+Recursive Case:S(N) = S(N/2) + logN
+					= [S(N/4) + log(N/2)] + logN
+					=[[S(N/8) + log(N/4)]+log(N/2)+logN
+					=S(N/8) + log(N)-log(4) + log(N)-log(2) + logN
+					=S(N/8) + (log(N) - 2) + (log(N) -1) - logN
+					=S(N/8) + 3*logN - (2+1+0)
+					=S(N/2^3) + 3*logN - (2 + 1 + 0)
+2^k = N					
+k=logN				=S(N/2^k) + k*logN - (k-1)*k/2
+					=S(N/N) + logN*logN - (logN-1)*(logN/2)
+					=2 + logN*logN - (((logN-1)*logN)/2)
+
+
+			S(N) = 2 + logN*logN - (((logN-1)*logN)/2)
+
+
+
+
+
+
+
